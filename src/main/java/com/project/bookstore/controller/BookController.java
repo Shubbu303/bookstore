@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.project.bookstore.Dto.BookDto;
 
-@RestController
+@RestController//
 public class BookController {
 
 	@GetMapping("api/v1/books")
