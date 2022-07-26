@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${databaseURL}
+    username: ${usernameDB}
+    password: ${passwordDB}
+    driverClassName: org.hibernate.dialect.PostgreSQL82Dialect
+    hikari:
+      connection-test-query: SELECT 1
+      
+  jpa: 
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
+
+  
